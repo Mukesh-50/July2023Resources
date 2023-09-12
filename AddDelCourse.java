@@ -57,9 +57,9 @@ public class AddDelCourse {
 		
 		int rowCount=updatedNoCourses.size();
 		
-		WebElement lastRoW=updatedNoCourses.get(rowCount) ;
+	
 		
-		WebElement deleteBtn=lastRoW.findElement(By.xpath("//button[contains(text(),'Delete')][last()]"));
+		WebElement deleteBtn=driver.findElement(By.xpath("(//button[contains(text(),'Delete')])[last()]"));
 		
 		deleteBtn.click();
 		Thread.sleep(2000);
@@ -76,4 +76,5 @@ public class AddDelCourse {
 		}
 	}
 
+	
 }
