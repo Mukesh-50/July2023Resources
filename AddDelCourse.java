@@ -55,8 +55,7 @@ public class AddDelCourse {
 			System.out.println("Pls check again , course is not added");
 		}
 		
-		int rowCount=updatedNoCourses.size();
-		
+	
 	
 		
 		WebElement deleteBtn=driver.findElement(By.xpath("(//button[contains(text(),'Delete')])[last()]"));
