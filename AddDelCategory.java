@@ -66,7 +66,7 @@ driver.findElement(By.xpath("//div[@class='manage-btns']//button[contains(normal
 		}
 		
 		Thread.sleep(2000);
-List<WebElement> element = 	driver.findElements(By.xpath("(//button[contains(text(),'Delete')])"));
+List<WebElement> element = 	driver.findElements(By.xpath("//button[@class='action-btn delete-btn'][normalize-space()='Delete']"));
 
    WebElement ele = element.get((element.size()-1));
 
@@ -75,9 +75,7 @@ List<WebElement> element = 	driver.findElements(By.xpath("(//button[contains(tex
    Thread.sleep(2000);
    ele.click();
    Thread.sleep(2000);
-  Alert delAlt= driver.switchTo().alert();
- 
-  delAlt.accept();
+ driver.findElement(By.xpath("//button[@class='action-btn'][normalize-space()='Delete']")).click();
    
 	UpdatednoCategory=driver.findElements(By.xpath("//table[@class='courses-table table table-borderless']//input"));
 	
