@@ -12,7 +12,8 @@ import Helper.Utility;
 
 public class AddCourse {
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) throws InterruptedException 
+	{
 		WebDriver driver =Utility.startbrowser("Chrome", "https://freelance-learn-automation.vercel.app/login");
 		driver.findElement(By.name("email1")).sendKeys("admin@email.com");
 		driver.findElement(By.name("password1")).sendKeys("admin@123");
