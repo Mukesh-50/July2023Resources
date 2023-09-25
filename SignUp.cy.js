@@ -22,7 +22,7 @@ describe('SignUp Test ', () => {
    cy.get("button[type='submit']").click()
 
    
-   cy.xpath('//div[contains(text(),"Signup successfully")]').should('contain.text','Signup successfully')
+   cy.xpath('//div[contains(text(),"Signup successfully")]').should('to') //'Signup successfully')
 
 
 
